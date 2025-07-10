@@ -576,9 +576,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
   }
 
-  .pages{
-    text-align: center;
-  }
+  .pages {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
 
   .para{
     width:100%
