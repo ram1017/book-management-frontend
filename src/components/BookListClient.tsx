@@ -41,14 +41,16 @@ export default function BookListClient({ initialData }: { initialData: any }) {
   const rowsPerPage = 10;
   const books: Book[] = hydratedData?.allBooks ?? [];
 
-  const handleDelete = async (uniqueId: string) => {
-    try {
-      await deleteBook({ variables: { uniqueId } });
-      refetch();
-    } catch (err) {
-      console.error("Error deleting book:", err);
-    }
-  };
+ const handleDelete = async (uniqueId: string) => {
+  try {
+    await deleteBook({ variables: { uniqueId } });
+    window.location.reload(); 
+  } catch (err) {
+    console.error("Error deleting book:", err);
+  }
+};
+
+  
 
   const handleRowClick = (book: Book) => router.push(`/book/${book.uniqueId}`);
 
