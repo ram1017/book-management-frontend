@@ -3,14 +3,13 @@ import { GET_BOOK_BY_ID } from "@/graphql/queries";
 import BookDetailsClient from "@/components/BookDetialsClient";
 
 
-interface PageProps {
-  params: { id: string };
-}
-
 export const dynamic = "force-dynamic";
 
-
-async function BookPage({ params }: PageProps) {
+export default async function BookPage({
+  params,
+}: {
+  params: { id: string };
+}) {
   const { data } = await getClient().query({
     query: GET_BOOK_BY_ID,
     variables: { uniqueId: params.id },
@@ -18,5 +17,3 @@ async function BookPage({ params }: PageProps) {
 
   return <BookDetailsClient initialData={data} />;
 }
-
-export default BookPage;
