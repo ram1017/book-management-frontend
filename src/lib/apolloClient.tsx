@@ -2,7 +2,7 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "http://localhost:8080/graphql", // your Spring Boot GraphQL endpoint
+  uri: process.env.NEXT_PUBLIC_GRAPHQL_API,
   cache: new InMemoryCache(),
 });
 
