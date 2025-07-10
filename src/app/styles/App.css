@@ -10,26 +10,20 @@ body {
 
 .heading {
   color: #dbbb01;
-  
   margin-left : 8%;
   margin-top :5%;
-  
   font-size: 2.5rem;
   font-weight: 600;
-  
-  
-
-  
 }
+
 .addicon{
   color: #aaa;
   font-size:1.3rem;
   position: absolute;
-
   left: 8%;
   top:23%
-  
 }
+
 .create {
   position: relative;
   background-color: #161616;
@@ -83,6 +77,7 @@ body {
 .search::placeholder {
   color: #aaa;
 }
+
 table{
   border-color: #121212;
 }
@@ -281,7 +276,6 @@ table{
   color: rgb(15, 15, 15)
 }
 
-
 .submitbtn:hover{
   background-color: #bbbbbb;
   color: rgb(15, 15, 15);
@@ -355,13 +349,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   color: #555555;
 }
+
 .pages{
   font-size: 1.3rem;
   font-weight: 700;
   color: #555555;
-  
   text-align: center;
-
 }
 
 .subheadingdetail {
@@ -398,22 +391,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 2%;
 }
 
-/* Add this to the bottom of your App.css */
-
-/* ========== RESPONSIVENESS ========== */
-
 @media screen and (max-width: 1380px) {
-.create{
-  padding-left: 3%;
+  .create{
+    padding-left: 3%;
+  }
+  .pages{
+    
+    text-align: center;
+  }
 }
-.pages{
-  width: 40%;
-}
-
-
-}
-
-
 
 @media screen and (max-width: 992px) {
   .bootsrap {
@@ -426,14 +412,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 2.2rem;
     text-align: center;
   }
+
   .synopsis{
-    margin-left: 0;
+    margin-left: 10%;
+    text-align: left;
   }
+
   .create{
     padding-left: 3.5%;
     margin-right: 10%;
-    
-
   }
 
   .subheading {
@@ -452,22 +439,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .search-box {
     width: 80%;
   }
-  .synopsis{
-    text-align: left;
-    margin-left: 10%;
-  }
-  .pages{
-    width: 40%;
-  }
 
   .submitbtn {
     width: 80%;
   }
-    .backbtn {
+
+  .backbtn {
     font-size: 2.8rem;
     margin-left: 5%;
     margin-bottom: 5%;
     position: relative;
+  }
+
+  .pages{
+    
+    text-align: center;
   }
 }
 
@@ -478,13 +464,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     overflow-y: scroll;
     padding-bottom: 20px;
   }
+
   .heading{
-     font-size: 2rem;
-     position: relative;
+    font-size: 2rem;
+    position: relative;
     left:8%;
     margin-top: 50px;
     margin-bottom: 50px;
-
   }
 
   .heading2 {
@@ -492,6 +478,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: center;
     margin-top: 20px;
   }
+
   .para,
   .image{
     width: 90%;
@@ -510,22 +497,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-right: auto;
     display: block;
   }
+
   .pages{
     text-align: center;
-    width: 50%;
+  
   }
 
   .search-box {
-    
     align-items: stretch;
     gap: 10px;
     padding: 0px 10px;
     margin-bottom: 0%;
-    
   }
+
   .search-icon{
     margin-top: 3%;
-    
   }
 
   .search {
@@ -538,21 +524,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block;
     text-align: center;
     padding-left: 45px;
-    
   }
 
   .addicon {
-    
     left: 32%;
     top: 2;
     margin-right: 8px;
   }
+
   .backbtn {
     font-size: 2.8rem;
     margin-left: 5%;
     margin-bottom: 5%;
     position: relative;
   }
+
   .synopsis{
     text-align: left;
     margin-left: 5%;
@@ -572,29 +558,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 5%;
     position: relative;
   }
-  
 
   .bheading,
   .moreheading {
     font-size: 2rem;
-    
   }
+
   .synopsis{
     margin:0;
     position: relative;
     margin-bottom: 5%;
     margin-top: 5%;
     text-align: left;
- 
   }
 
   .image {
     width: 100%;
   }
+
   .pages{
-    width: 55%;
+    width: 70%;
     margin: auto;
   }
+
   .para{
     width:100%
   }
