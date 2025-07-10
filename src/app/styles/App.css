@@ -355,6 +355,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 700;
   color: #555555;
 }
+.pages{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #555555;
+  
+  text-align: center;
+
+}
 
 .subheadingdetail {
   padding-left: 1%;
@@ -388,4 +396,206 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2%;
+}
+
+/* Add this to the bottom of your App.css */
+
+/* ========== RESPONSIVENESS ========== */
+
+@media screen and (max-width: 1380px) {
+.create{
+  padding-left: 3%;
+}
+.pages{
+  width: 40%;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .bootsrap {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .bheading,
+  .moreheading{
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .synopsis{
+    margin-left: 0;
+  }
+  .create{
+    padding-left: 3.5%;
+    margin-right: 10%;
+    
+
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+  }
+
+  .subheadingdetail {
+    font-size: 1rem;
+  }
+
+  .para,
+  .image {
+    width: 80%;
+  }
+
+  .search-box {
+    width: 80%;
+  }
+  .synopsis{
+    text-align: left;
+    margin-left: 10%;
+  }
+  .pages{
+    width: 40%;
+  }
+
+  .submitbtn {
+    width: 80%;
+  }
+    .backbtn {
+    font-size: 2.8rem;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bookformmodal {
+    width: 95%;
+    height: auto;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+  }
+  .heading{
+     font-size: 2rem;
+     position: relative;
+    left:8%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+  .heading2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .para,
+  .image{
+    width: 90%;
+  }
+
+  .inputbox {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .submitbtn {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .pages{
+    text-align: center;
+    width: 50%;
+  }
+
+  .search-box {
+    
+    align-items: stretch;
+    gap: 10px;
+    padding: 0px 10px;
+    margin-bottom: 0%;
+    
+  }
+  .search-icon{
+    margin-top: 3%;
+    
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .create {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    padding-left: 45px;
+    
+  }
+
+  .addicon {
+    
+    left: 32%;
+    top: 2;
+    margin-right: 8px;
+  }
+  .backbtn {
+    font-size: 2.8rem;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    position: relative;
+  }
+  .synopsis{
+    text-align: left;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .book-table th,
+  .book-table td {
+    padding: 12px 10px;
+    font-size: 0.85rem;
+  }
+
+  .backbtn {
+    font-size: 2.8rem;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    position: relative;
+  }
+  
+
+  .bheading,
+  .moreheading {
+    font-size: 2rem;
+    
+  }
+  .synopsis{
+    margin:0;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: left;
+ 
+  }
+
+  .image {
+    width: 100%;
+  }
+  .pages{
+    width: 55%;
+    margin: auto;
+  }
+  .para{
+    width:100%
+  }
 }
