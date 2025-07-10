@@ -6,7 +6,7 @@ export function getClient() {
   return new ApolloClient({
     ssrMode: true, 
     link: new HttpLink({
-      uri: "http://localhost:8080/graphql", 
+      uri: process.env.NEXT_PUBLIC_GRAPHQL_API, 
       fetch, 
     }),
     cache: new InMemoryCache(), 
