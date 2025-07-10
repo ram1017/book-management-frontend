@@ -2,9 +2,12 @@ import { getClient } from "@/lib/ssrApolloClient";
 import { GET_BOOK_BY_ID } from "@/graphql/queries";
 import BookDetailsClient from "@/components/BookDetialsClient"
 
-interface Props {
-  params: { id: string };
-}
+type Props = {
+  params: {
+    id: string;
+  };
+};
+
 
 export const dynamic = "force-dynamic"; 
 
