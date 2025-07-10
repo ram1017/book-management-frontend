@@ -1,6 +1,7 @@
 import { getClient } from "@/lib/ssrApolloClient";
 import { GET_BOOK_BY_ID } from "@/graphql/queries";
-import BookDetailsClient from "@/components/BookDetialsClient"
+import BookDetailsClient from "@/components/BookDetialsClient";
+
 
 type Props = {
   params: {
@@ -9,9 +10,7 @@ type Props = {
 };
 
 
-export const dynamic = "force-dynamic"; 
-
-export default async function BookPage({ params }: Props) {
+async function BookPage({ params }: Props) {
   const { data } = await getClient().query({
     query: GET_BOOK_BY_ID,
     variables: { uniqueId: params.id },
@@ -19,3 +18,7 @@ export default async function BookPage({ params }: Props) {
 
   return <BookDetailsClient initialData={data} />;
 }
+
+export const dynamic = "force-dynamic"; // optional for SSR behavior
+
+export default BookPage;
