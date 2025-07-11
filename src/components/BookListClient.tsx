@@ -42,6 +42,8 @@ export default function BookListClient({ initialData }: { initialData: any }) {
   const books: Book[] = hydratedData?.allBooks ?? [];
 
  const handleDelete = async (uniqueId: string) => {
+  const confirmDelete = window.confirm("Are you sure you want to delete this book?");
+  if (!confirmDelete) return;
   try {
     await deleteBook({ variables: { uniqueId } });
     window.location.reload(); 
